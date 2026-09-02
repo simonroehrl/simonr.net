@@ -12,7 +12,7 @@
     />
     <meta
       name="description"
-      content="Portfolio of Simon Röhrl, Frontend / Full‑Stack Web Developer with 4+ years experience delivering customer‑facing websites and WordPress solutions."
+      content="Portfolio of Simon Röhrl, Co-founder &amp; Managing Director of RSites GmbH — 5+ years of experience and 30+ delivered websites, built accessibility-first."
     />
     <style>
       :root {
@@ -164,11 +164,16 @@
         width: 100%;
         height: 180px;
         object-fit: cover;
+        object-position: top;
         background: #0a0a0a;
       }
 
       .card figcaption {
         padding: 10px 12px 12px;
+      }
+
+      .card figure {
+        margin: 0;
       }
 
       .card .site {
@@ -185,6 +190,37 @@
         text-underline-offset: 2px;
         text-decoration-thickness: 1px;
         color: color-mix(in oklab, var(--accent) 55%, var(--muted));
+      }
+
+      /* Muted note for offline / in-development projects (no link, no URL) */
+      .card .note {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 2px;
+        font-style: italic;
+      }
+
+      /* Text-only cards (projects without screenshots) */
+      .card .card-body {
+        padding: 14px 16px;
+      }
+
+      .card .desc {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 2px;
+      }
+
+      div.card:hover {
+        transform: none;
+        border-color: var(--border);
+      }
+
+      .section-intro {
+        margin: 0 0 18px;
+        color: var(--muted);
       }
 
       footer {
@@ -214,12 +250,194 @@
     <div class="container" id="content">
       <header class="hero" aria-labelledby="intro">
         <h1 id="intro" class="title">
-            Simon Röhrl: Frontend and Full‑Stack Web Developer with 4+ years of experience building high‑quality, customer‑facing websites and robust WordPress solutions.
+            Simon Röhrl: Co‑founder &amp; Managing Director of RSites GmbH — Frontend and Full‑Stack Web Developer with 5+ years of experience and 30+ delivered websites.
         </h1>
         <p class="lede">
-            Below are selected highlights from my recent work.
+            Below are selected highlights from my work. Sites that are still online link out;
+            projects that have since gone offline or been relaunched are shown as previews only.
         </p>
       </header>
+
+      <section
+        class="section-card"
+        aria-labelledby="recent-work-title"
+        id="recent-work"
+      >
+        <h2 id="recent-work-title" class="section-title">
+            Recent frontends — RSites GmbH with agency partner Gessulat + Gessulat
+        </h2>
+
+        <p class="section-intro">
+            Since 2023 I run RSites GmbH as Co‑founder &amp; Managing Director. Our focus:
+            corporate websites built accessibility‑first — every project ships European
+            Accessibility Act (EAA) ready. The frontends below were delivered with our
+            agency partner Gessulat + Gessulat; development runs on GitLab in private
+            client repositories.
+        </p>
+
+        <div class="projects-grid" role="list">
+          <a class="card" href="https://karriere.suzuki.de/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/suzuki-karriere.webp" alt="Preview of the Suzuki Deutschland careers website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">Suzuki Deutschland Karriere</span>
+                <span class="url">https://karriere.suzuki.de/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://www.lkqkarriere.de/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/lkq-dach.webp" alt="Preview of the LKQ DACH jobs and careers website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">LKQ DACH Jobs &amp; Karriere</span>
+                <span class="url">https://www.lkqkarriere.de/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://www.teledata.de/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/teledata.webp" alt="Preview of the TeleData website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">TeleData</span>
+                <span class="url">https://www.teledata.de/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://www.vitagroup.ag/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/vitagroup.webp" alt="Preview of the vitagroup website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">vitagroup</span>
+                <span class="url">https://www.vitagroup.ag/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://www.conalliance.com/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/conalliance.webp" alt="Preview of the Conalliance website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">Conalliance M&amp;A</span>
+                <span class="url">https://www.conalliance.com/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://www.lana-grossa.de/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/lana-grossa.webp" alt="Preview of the Lana Grossa website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">Lana Grossa</span>
+                <span class="url">https://www.lana-grossa.de/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://karriere.aldi-sued.de/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/aldi-karriere.webp" alt="Preview of the ALDI SÜD careers website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">ALDI SÜD Karriere</span>
+                <span class="url">https://karriere.aldi-sued.de/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://www.wurzer-umwelt.de/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/wurzer.webp" alt="Preview of the Wurzer Umwelt website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">Wurzer Umwelt</span>
+                <span class="url">https://www.wurzer-umwelt.de/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="card" href="https://www.wumas.de/" target="_blank" rel="noopener noreferrer" role="listitem">
+            <figure>
+              <img src="/images/wumas.webp" alt="Preview of the Wumas website" width="800" height="500" loading="lazy" />
+              <figcaption>
+                <span class="site">Wumas Baumaschinen</span>
+                <span class="url">https://www.wumas.de/</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">Lürssen</span>
+              <span class="desc">Corporate site frontend</span>
+              <span class="note">Relaunch in development</span>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">Servero</span>
+              <span class="desc">Frontend</span>
+              <span class="note">In development</span>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">VDW</span>
+              <span class="desc">Landing page</span>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">Suzuki Deutschland</span>
+              <span class="desc">Corporate site frontend</span>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">IG Metall</span>
+              <span class="desc">Brand work (BMW, Siemens)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-card"
+        aria-labelledby="products-title"
+        id="products"
+      >
+        <h2 id="products-title" class="section-title">
+            Current product work
+        </h2>
+
+        <div class="projects-grid" role="list">
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">Blitzframes</span>
+              <span class="desc">
+                Accelerated video rendering for Remotion: browser rasterisation, JS
+                execution and H.264 encoding on dedicated hardware — aimed at teams with
+                real rendering costs. Currently building.
+              </span>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">frontend-builder</span>
+              <span class="desc">
+                Automated Figma‑to‑frontend pipeline: reads the design file and generates
+                the implemented frontend. In production for a Munich client; source
+                private.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         class="section-card"
@@ -237,23 +455,10 @@
           <li>Integration of analytics, tracking, and marketing tags minding GDPR compliance</li>
         </ul>
 
-        <!-- Replace the examples below with your real projects -->
         <div class="projects-grid" role="list">
-          <a
-            class="card"
-            href="https://career.mytheresa.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+          <a class="card" href="https://career.mytheresa.com/" target="_blank" rel="noopener noreferrer" role="listitem">
             <figure>
-              <img
-                src="/mytheresa_mockup.webp"
-                alt="Preview of mytheresa career website"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/mytheresa.webp" alt="Preview of the Mytheresa career website" width="800" height="500" loading="lazy" />
               <figcaption>
                 <span class="site">Mytheresa Career Site</span>
                 <span class="url">https://career.mytheresa.com</span>
@@ -261,49 +466,33 @@
             </figure>
           </a>
 
-          <a
-            class="card"
-            href="https://hello-incredible.akkodis.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+          <a class="card" href="https://www.simplicity.ag/" target="_blank" rel="noopener noreferrer" role="listitem">
             <figure>
-              <img
-                src="/Case_Akkodis.webp"
-                alt="Preview of Akkodis landing page"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/simplicity.webp" alt="Preview of the Simplicity careers website" width="800" height="500" loading="lazy" />
               <figcaption>
-                <span class="site">Akkodis Landing Page</span>
-                <span class="url">https://hello-incredible.akkodis.com/</span>
+                <span class="site">Simplicity Careers (OPUS &amp; someday)</span>
+                <span class="url">https://www.simplicity.ag/</span>
               </figcaption>
             </figure>
           </a>
 
-          <a
-            class="card"
-            href="https://simplicity.ag/"
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+          <div class="card" role="listitem">
             <figure>
-              <img
-                src="/simplicity.webp"
-                alt="Preview of Simplicity company site"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/akkodis.webp" alt="Preview of the Akkodis landing page (archived)" width="800" height="500" loading="lazy" />
               <figcaption>
-                <span class="site">Simplicity Company Site</span>
-                <span class="url">https://simplicity.ag/</span>
+                <span class="site">Akkodis Landing Page</span>
+                <span class="note">Campaign ended — no longer online</span>
               </figcaption>
             </figure>
-          </a>
+          </div>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">Eventim Careers</span>
+              <span class="desc">Careers site frontend</span>
+              <span class="note">Since relaunched</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -316,123 +505,70 @@
             I also led the frontend development (pixel‑perfect implementation of the visual design) for the following websites.
         </h2>
 
-        <!-- Replace the examples below with your real projects -->
         <div class="projects-grid" role="list">
-            <a
-            class="card"
-            href="https://it-jobs.aldi-sued.de/"
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+            <a class="card" href="https://it-jobs.aldi-sued.de/" target="_blank" rel="noopener noreferrer" role="listitem">
             <figure>
-              <img
-                src="/aldi.webp"
-                alt="Preview of Aldi Süd IT Jobs website"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/aldi.webp" alt="Preview of the ALDI SÜD IT jobs website" width="800" height="500" loading="lazy" />
               <figcaption>
-                <span class="site">Aldi Süd IT Jobs</span>
+                <span class="site">ALDI SÜD IT Jobs (ALDI DX)</span>
                 <span class="url">https://it-jobs.aldi-sued.de/</span>
               </figcaption>
             </figure>
-          </a> 
+          </a>
 
-          <a
-            class="card"
-            href="https://careers.lkqeurope.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+          <a class="card" href="https://www.domicil-group.de/" target="_blank" rel="noopener noreferrer" role="listitem">
             <figure>
-              <img
-                src="/lkq.webp"
-                alt="Preview of LKQ Europe career site"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/domicil.webp" alt="Preview of the Domicil Group website" width="800" height="500" loading="lazy" />
               <figcaption>
-                <span class="site">LKQ Europe Career Site</span>
-                <span class="url">https://careers.lkqeurope.com/</span>
+                <span class="site">Domicil Group</span>
+                <span class="url">https://www.domicil-group.de/</span>
               </figcaption>
             </figure>
           </a>
 
-          <a
-            class="card"
-            href="https://bears-with-benefits.comit
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+          <a class="card" href="https://www.bears-with-benefits.com/" target="_blank" rel="noopener noreferrer" role="listitem">
             <figure>
-              <img
-                src="/bears.webp"
-                alt="Preview of Bears with Benefits online shop"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/bears.webp" alt="Preview of the Bears with Benefits online shop" width="800" height="500" loading="lazy" />
               <figcaption>
                 <span class="site">Bears with Benefits Online Shop</span>
-                <span class="url">https://bears-with-benefits.com/</span>
+                <span class="url">https://www.bears-with-benefits.com/</span>
               </figcaption>
             </figure>
           </a>
 
-          <a
-            class="card"
-            href="https://amapharm.deit
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+          <a class="card" href="https://amapharm.de/" target="_blank" rel="noopener noreferrer" role="listitem">
             <figure>
-              <img
-                src="/amapharm.webp"
-                alt="Preview of Amapharm company site"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/amapharm.webp" alt="Preview of the Amapharm company site" width="800" height="500" loading="lazy" />
               <figcaption>
                 <span class="site">Amapharm Company Site</span>
                 <span class="url">https://amapharm.de/</span>
               </figcaption>
             </figure>
           </a>
-          <a
-            class="card"
-            href="https://globl.contact/"
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+
+          <a class="card" href="https://globl.contact/" target="_blank" rel="noopener noreferrer" role="listitem">
             <figure>
-              <img
-                src="/globl.webp"
-                alt="Preview of Globl.Contact company site"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+              <img src="/images/globl.webp" alt="Preview of the Globl.Contact company site" width="800" height="500" loading="lazy" />
               <figcaption>
                 <span class="site">Globl.Contact Company Site</span>
                 <span class="url">https://globl.contact/</span>
               </figcaption>
             </figure>
           </a>
+
+          <div class="card" role="listitem">
+            <div class="card-body">
+              <span class="site">LKQ Europe Career Site</span>
+              <span class="desc">Careers site frontend</span>
+              <span class="note">Since replaced — see the current LKQ DACH site above</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <footer>
         <p>
           © <span id="y">2025</span> Simon Röhrl. All rights reserved.
-          <!-- Optional: Add contact info or social links here -->
         </p>
       </footer>
     </div>

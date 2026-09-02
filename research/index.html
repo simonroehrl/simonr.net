@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <title>Simon Röhrl — Research &amp; Publications</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Research profile and publications of Simon Röhrl — PhD researcher at the University of Eastern Finland working on eye tracking, web technologies and AI."
+    />
+    <style>
+      :root {
+        --bg: #0b0c10;
+        --surface: #111217;
+        --text: #e9eef2;
+        --muted: #b7c1c8;
+        --accent: #58a6ff;
+        --border: #24262e;
+        --ring: rgba(88, 166, 255, 0.35);
+        --radius: 14px;
+        --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #ffffff;
+          --surface: #f8fafc;
+          --text: #0e141b;
+          --muted: #475569;
+          --accent: #0b64d2;
+          --border: #e5e7eb;
+          --ring: rgba(11, 100, 210, 0.2);
+          --shadow: 0 8px 22px rgba(2, 8, 20, 0.06);
+        }
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+        line-height: 1.55;
+        color: var(--text);
+        background: radial-gradient(1200px 800px at 20% 0%, #15223833 0, #0000),
+          var(--bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        width: min(900px, 92vw);
+        margin-inline: auto;
+        padding: 28px 0 80px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+      }
+
+      .skip-link:focus {
+        left: 16px;
+        top: 16px;
+        background: var(--surface);
+        color: var(--text);
+        padding: 8px 12px;
+        border-radius: 8px;
+        outline: 2px solid var(--accent);
+      }
+
+      header.hero {
+        padding: 42px 0 22px;
+      }
+
+      .title {
+        font-size: clamp(28px, 4vw, 40px);
+        line-height: 1.2;
+        margin: 0 0 10px;
+        letter-spacing: -0.01em;
+      }
+
+      .lede {
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(16px, 2.3vw, 18px);
+      }
+
+      section {
+        margin-top: 42px;
+      }
+
+      .section-card {
+        background: linear-gradient(0deg, #ffffff03, #ffffff03), var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: clamp(16px, 2vw, 22px);
+      }
+
+      h2.section-title {
+        font-size: clamp(20px, 3vw, 26px);
+        margin: 0 0 12px;
+        letter-spacing: -0.01em;
+      }
+
+      .bullet-points {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+      }
+
+      .bullet-points li + li {
+        margin-top: 6px;
+      }
+
+      h3.year-title {
+        font-size: clamp(18px, 2.5vw, 22px);
+        margin: 26px 0 10px;
+        letter-spacing: -0.01em;
+      }
+
+      h3.year-title:first-of-type {
+        margin-top: 12px;
+      }
+
+      ol.pub-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .pub {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin-top: 12px;
+      }
+
+      .pub-title {
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      .pub-title a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
+        text-decoration-color: color-mix(in oklab, var(--accent) 55%, var(--muted));
+      }
+
+      .pub-title a:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px var(--ring);
+        border-radius: 4px;
+      }
+
+      .pub-authors {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 4px;
+      }
+
+      .pub-authors strong {
+        color: var(--text);
+      }
+
+      .pub-venue {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 2px;
+        font-style: italic;
+      }
+
+      .pub-meta {
+        display: block;
+        color: color-mix(in oklab, var(--accent) 55%, var(--muted));
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+      footer {
+        margin-top: 46px;
+        color: var(--muted);
+        font-size: 14px;
+        text-align: center;
+      }
+
+      footer a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#content" class="skip-link">Skip to content</a>
+
+    <div class="container" id="content">
+      <header class="hero" aria-labelledby="intro">
+        <h1 id="intro" class="title">Research</h1>
+        <p class="lede">
+            PhD researcher at the University of Eastern Finland (since 03/2025), working at
+            the intersection of eye tracking, web technologies and AI.
+        </p>
+      </header>
+
+      <section class="section-card" aria-labelledby="profile-title" id="profile">
+        <h2 id="profile-title" class="section-title">Profile</h2>
+        <ul class="bullet-points">
+          <li>
+            PhD / doctoral researcher, University of Eastern Finland (UEF), Joensuu —
+            since 03/2025.
+          </li>
+          <li>
+            Research Associate, project REACH, OTH Regensburg — eye-tracking glasses and
+            web usability.
+          </li>
+          <li>
+            Chair &amp; main organiser of the METR workshop (Metrics in Eye Tracking
+            Research) at ETRA 2026 — with a community of ~68 researchers working on
+            metric standardisation.
+          </li>
+          <li>
+            Research stays in Finland, Morocco, the Netherlands and Spain.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-card" aria-labelledby="pubs-title" id="publications">
+        <h2 id="pubs-title" class="section-title">Publications</h2>
+
+        <h3 class="year-title">2026</h3>
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1145/3797246.3806211" target="_blank" rel="noopener noreferrer">Computational Operationalization Choices for Spatial Data Quality in Screen-Based Eye Tracking</a></span>
+            <span class="pub-authors"><strong>S Röhrl</strong>, R Bednarik, JH Mottok</span>
+            <span class="pub-venue">Proceedings of the 2026 Symposium on Eye Tracking Research and Applications, 1-6</span>
+            <span class="pub-meta">2026 · Cited by 1</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1145/3797246.3806010" target="_blank" rel="noopener noreferrer">Inducing Global and Focal View in UML Class Diagram Comprehension</a></span>
+            <span class="pub-authors">T Ezer, F Hauser, <strong>S Röhrl</strong>, JH Mottok</span>
+            <span class="pub-venue">Proceedings of the 2026 Symposium on Eye Tracking Research and Applications</span>
+            <span class="pub-meta">2026 · Cited by 1</span>
+          </li>
+        </ol>
+
+        <h3 class="year-title">2025</h3>
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1145/3723010.3723023" target="_blank" rel="noopener noreferrer">A comparison of eye movement classifiers</a></span>
+            <span class="pub-authors">T Ezer, F Engl, L Grabinger, <strong>S Röhrl</strong>, F Hauser, J Mottok</span>
+            <span class="pub-venue">Proceedings of the 6th European Conference on Software Engineering Education</span>
+            <span class="pub-meta">2025 · Cited by 4</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1145/3723010.3723028" target="_blank" rel="noopener noreferrer">A tool landscape for adaptive learning</a></span>
+            <span class="pub-authors">S Staufer, F Bugert, VK Nadimpalli, <strong>S Röhrl</strong>, R Altweck, T Ezer</span>
+            <span class="pub-venue">Proceedings of the 6th European Conference on Software Engineering Education</span>
+            <span class="pub-meta">2025 · Cited by 5</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1109/ACCESS.2025.3583975" target="_blank" rel="noopener noreferrer">Ethical Considerations of AI in Education: A Case Study Based on Pythia Learning Enhancement System</a></span>
+            <span class="pub-authors"><strong>S Röhrl</strong>, S Staufer, F Bugert, VK Nadimpalli, F Hauser, L Grabinger</span>
+            <span class="pub-venue">IEEE Access</span>
+            <span class="pub-meta">2025 · Cited by 11</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2025.1571" target="_blank" rel="noopener noreferrer">Expert Surveys to Real Time Adaptation of Learning Paths</a></span>
+            <span class="pub-authors">VK Nadimpalli, R Maier, S Staufer, <strong>S Röhrl</strong>, T Ezer, L Grabinger, F Hauser</span>
+            <span class="pub-venue">ICERI2025 Proceedings, 5677-5687</span>
+            <span class="pub-meta">2025</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2025.1419" target="_blank" rel="noopener noreferrer">Eye Tracking Glasses in Educational Settings: Guidelines on Data Quality</a></span>
+            <span class="pub-authors">J Schaffer, T Ezer, <strong>S Röhrl</strong>, F Hauser, S Staufer, VK Nadimpalli</span>
+            <span class="pub-venue">ICERI2025 Proceedings, 5027-5038</span>
+            <span class="pub-meta">2025</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2025.0658" target="_blank" rel="noopener noreferrer">Leveraging Five Questionnaires to Analyze Student Learning Strategies and Generate AI-Powered Individualized Learning Paths</a></span>
+            <span class="pub-authors">F Hauser, S Staufer, <strong>S Röhrl</strong>, VK Nadimpalli, T Ezer, L Grabinger, J Mottok</span>
+            <span class="pub-venue">ICERI2025 Proceedings, 1775-1784</span>
+            <span class="pub-meta">2025</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1145/3723010.3723022" target="_blank" rel="noopener noreferrer">ML based Evaluation Methodology for Learning Path Recommender Systems</a></span>
+            <span class="pub-authors">F Bugert, VK Nadimpalli, D Bittner, T Ezer, L Grabinger, R Maier, <strong>S Röhrl</strong></span>
+            <span class="pub-venue">Proceedings of the 6th European Conference on Software Engineering Education</span>
+            <span class="pub-meta">2025 · Cited by 3</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1145/3723010.3723016" target="_blank" rel="noopener noreferrer">Nestor: A personalized learning path recommendation algorithm for adaptive learning environments</a></span>
+            <span class="pub-authors">VK Nadimpalli, R Maier, T Ezer, F Bugert, S Staufer, <strong>S Röhrl</strong>, F Hauser</span>
+            <span class="pub-venue">Proceedings of the 6th European Conference on Software Engineering Education</span>
+            <span class="pub-meta">2025 · Cited by 4</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2025.1841" target="_blank" rel="noopener noreferrer">Towards accurate eye tracking: quantifying error in linear pixel-to-degree conversion</a></span>
+            <span class="pub-authors">T Ezer, <strong>S Röhrl</strong>, J Mottok</span>
+            <span class="pub-venue">ICERI2025 Proceedings, 6709-6717</span>
+            <span class="pub-meta">2025</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2025.0831" target="_blank" rel="noopener noreferrer">TYCHE ALGORITHM 2.0: Learning Paths from Questionnaire Responses and Learning Analytics</a></span>
+            <span class="pub-authors">S Staufer, T Ezer, <strong>S Röhrl</strong>, L Grabinger, F Hauser, VK Nadimpalli</span>
+            <span class="pub-venue">ICERI2025 Proceedings, 2562-2572</span>
+            <span class="pub-meta">2025 · Cited by 1</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1145/3723010.3723024" target="_blank" rel="noopener noreferrer">Webgazetrack: A web-based eye tracking tool</a></span>
+            <span class="pub-authors"><strong>S Röhrl</strong>, F Hauser, T Ezer, L Grabinger, PDJ Mottok</span>
+            <span class="pub-venue">Proceedings of the 6th European Conference on Software Engineering Education</span>
+            <span class="pub-meta">2025 · Cited by 5</span>
+          </li>
+        </ol>
+
+        <h3 class="year-title">2024</h3>
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/edulearn.2024.2189" target="_blank" rel="noopener noreferrer">Evaluation of the learning management system Pythia</a></span>
+            <span class="pub-authors">S Staufer, F Hauser, T Ezer, L Grabinger, VK Nadimpalli, <strong>S Röhrl</strong></span>
+            <span class="pub-venue">EDULEARN24 Proceedings, 9089-9098</span>
+            <span class="pub-meta">2024 · Cited by 5</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/inted.2024.1087" target="_blank" rel="noopener noreferrer">Learning elements in lms - a survey among students</a></span>
+            <span class="pub-authors">S Staufer, F Hauser, L Grabinger, D Bittner, VK Nadimpalli, F Bugert, <strong>S Röhrl</strong></span>
+            <span class="pub-venue">INTED2024 Proceedings, 4224-4231</span>
+            <span class="pub-meta">2024 · Cited by 8</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2024.1524" target="_blank" rel="noopener noreferrer">Persistence of questionnaire data on learning styles, learning strategies and personality traits</a></span>
+            <span class="pub-authors">S Staufer, VK Nadimpalli, F Hauser, D Bittner, L Grabinger, F Bugert, <strong>S Röhrl</strong></span>
+            <span class="pub-venue">ICERI2024 Proceedings, 6310-6319</span>
+            <span class="pub-meta">2024 · Cited by 3</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2024.1454" target="_blank" rel="noopener noreferrer">Predicting learner characteristics using machine learning</a></span>
+            <span class="pub-authors">VK Nadimpalli, S Staufer, T Ezer, F Bugert, D Bittner, F Hauser, <strong>S Röhrl</strong></span>
+            <span class="pub-venue">ICERI2024 Proceedings, 6005-6014</span>
+            <span class="pub-meta">2024 · Cited by 3</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.1109/ithet61869.2024.10837641" target="_blank" rel="noopener noreferrer">Probabilistic machine learning for simulating complex learner profiles</a></span>
+            <span class="pub-authors">VK Nadimpalli, F Bugert, D Bittner, S Staufer, <strong>S Röhrl</strong>, F Hauser, T Ezer</span>
+            <span class="pub-venue">2024 21st International Conference on Information Technology Based Higher Education and Training (ITHET)</span>
+            <span class="pub-meta">2024 · Cited by 4</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/inted.2024.0783" target="_blank" rel="noopener noreferrer">Pythia-ai suggested individual learning paths for every student</a></span>
+            <span class="pub-authors"><strong>S Röhrl</strong>, S Staufer, VK Nadimpalli, F Bugert, F Hauser, L Grabinger</span>
+            <span class="pub-venue">INTED2024 Proceedings, 2871-2880</span>
+            <span class="pub-meta">2024 · Cited by 13</span>
+          </li>
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/inted.2024.1080" target="_blank" rel="noopener noreferrer">Tyche algorithm: Markov models for generating learning paths in learning management systems</a></span>
+            <span class="pub-authors">S Staufer, F Bugert, F Hauser, L Grabinger, T Ezer, VK Nadimpalli, <strong>S Röhrl</strong></span>
+            <span class="pub-venue">INTED2024 Proceedings, 4195-4205</span>
+            <span class="pub-meta">2024 · Cited by 15</span>
+          </li>
+        </ol>
+
+        <h3 class="year-title">2023</h3>
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-title"><a href="https://doi.org/10.21125/iceri.2023.1147" target="_blank" rel="noopener noreferrer">On the analysis of student learning strategies: using the LIST-K questionnaire to generate ai-based individualized learning paths</a></span>
+            <span class="pub-authors">F Hauser, S Staufer, L Grabinger, <strong>S Röhrl</strong>, J Mottok</span>
+            <span class="pub-venue">ICERI2023 Proceedings, 4611-4620</span>
+            <span class="pub-meta">2023 · Cited by 4</span>
+          </li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>
+          <a href="https://scholar.google.com/citations?user=UL63m84AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          ·
+          <a href="https://orcid.org/0009-0006-0768-0485" target="_blank" rel="noopener noreferrer">ORCID</a>
+          ·
+          <a href="/">simonr.net</a>
+        </p>
+        <p>© <span id="y">2026</span> Simon Röhrl. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      // Keep the year current without any build step
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
