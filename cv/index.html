@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <title>Simon Röhrl — Curriculum Vitae</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Curriculum Vitae of Simon Röhrl — Founder &amp; Full-Stack Engineer and PhD researcher (eye tracking, web technologies, AI), Regensburg area, Germany."
+    />
+    <style>
+      :root {
+        --bg: #0b0c10;
+        --surface: #111217;
+        --text: #e9eef2;
+        --muted: #b7c1c8;
+        --accent: #58a6ff;
+        --border: #24262e;
+        --ring: rgba(88, 166, 255, 0.35);
+        --radius: 14px;
+        --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #ffffff;
+          --surface: #f8fafc;
+          --text: #0e141b;
+          --muted: #475569;
+          --accent: #0b64d2;
+          --border: #e5e7eb;
+          --ring: rgba(11, 100, 210, 0.2);
+          --shadow: 0 8px 22px rgba(2, 8, 20, 0.06);
+        }
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+        line-height: 1.55;
+        color: var(--text);
+        background: radial-gradient(1200px 800px at 20% 0%, #15223833 0, #0000),
+          var(--bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        width: min(760px, 92vw);
+        margin-inline: auto;
+        padding: 28px 0 80px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+      }
+
+      .skip-link:focus {
+        left: 16px;
+        top: 16px;
+        background: var(--surface);
+        color: var(--text);
+        padding: 8px 12px;
+        border-radius: 8px;
+        outline: 2px solid var(--accent);
+      }
+
+      header.hero {
+        padding: 42px 0 22px;
+      }
+
+      .title {
+        font-size: clamp(28px, 4vw, 40px);
+        line-height: 1.2;
+        margin: 0 0 10px;
+        letter-spacing: -0.01em;
+      }
+
+      .lede {
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(16px, 2.3vw, 18px);
+      }
+
+      section {
+        margin-top: 42px;
+      }
+
+      .section-card {
+        background: linear-gradient(0deg, #ffffff03, #ffffff03), var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: clamp(16px, 2vw, 22px);
+      }
+
+      h2.section-title {
+        font-size: clamp(20px, 3vw, 26px);
+        margin: 0 0 12px;
+        letter-spacing: -0.01em;
+      }
+
+      .bullet-points {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+      }
+
+      .bullet-points li + li {
+        margin-top: 6px;
+      }
+
+      .pdf-button {
+        display: inline-block;
+        margin-top: 6px;
+        padding: 12px 22px;
+        border-radius: 10px;
+        background: transparent;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .pdf-button:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+      }
+
+      .pdf-button:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px var(--ring);
+      }
+
+      footer {
+        margin-top: 46px;
+        color: var(--muted);
+        font-size: 14px;
+        text-align: center;
+      }
+
+      footer a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#content" class="skip-link">Skip to content</a>
+
+    <div class="container" id="content">
+      <header class="hero" aria-labelledby="intro">
+        <h1 id="intro" class="title">Curriculum Vitae</h1>
+        <p class="lede">
+            Founder &amp; Full‑Stack Engineer and PhD researcher (eye tracking, web
+            technologies, AI), based in the Regensburg area, Germany. I build products
+            end‑to‑end — working daily with Claude Code and Codex, from idea to working
+            product in days.
+        </p>
+      </header>
+
+      <section class="section-card" aria-labelledby="pdf-title" id="pdf">
+        <h2 id="pdf-title" class="section-title">Full CV (PDF)</h2>
+        <p style="margin: 0 0 14px; color: var(--muted)">
+            The complete two‑page CV is available as a PDF:
+        </p>
+        <a class="pdf-button" href="/cv/Simon_Roehrl_CV.pdf">
+            Download CV (PDF)
+        </a>
+      </section>
+
+      <section class="section-card" aria-labelledby="highlights-title" id="highlights">
+        <h2 id="highlights-title" class="section-title">Highlights</h2>
+        <ul class="bullet-points">
+          <li>PhD researcher, University of Eastern Finland (since 03/2025) — eye tracking &amp; web.</li>
+          <li>M.Sc. Applied Research in Engineering Sciences, OTH Regensburg — final GPA 1.0.</li>
+          <li>Co‑founder &amp; Managing Director, RSites GmbH — 30+ websites delivered, accessibility‑first.</li>
+          <li>20+ peer‑reviewed papers on eye tracking, web technologies and AI.</li>
+          <li>Chair &amp; main organiser, METR workshop at ETRA 2026.</li>
+          <li>Current Bavarian runner‑up, 400m hurdles (2026).</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>
+          <a href="/">simonr.net</a>
+          ·
+          <a href="/work/">Work</a>
+          ·
+          <a href="/research/">Research</a>
+        </p>
+        <p>© <span id="y">2026</span> Simon Röhrl. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      // Keep the year current without any build step
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
